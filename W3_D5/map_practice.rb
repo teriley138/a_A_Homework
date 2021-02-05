@@ -10,7 +10,7 @@ class Map
             @map << [key, value]
     end
 
-    def set_helper(key)
+    def does_key_exist?(key)
         @map.any? {|pair| pair[0] == key}
     end
 
