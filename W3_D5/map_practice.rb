@@ -4,7 +4,7 @@ class Map
     end
 
     def set(key, value)
-        if set_helper(key)
+        if does_key_exist?(key)
             @map.each { |pair| @map[key] = value if key == pair[0] }
         else
             @map << [key, value]
